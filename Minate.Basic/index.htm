@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US">
+    <head>
+        <title>Minate WebGame</title>
+        
+	    <meta http-equiv="Content-Type" content="text/html;charset=windows-1252" />
+		
+        <link rel="Stylesheet" type="text/css" href="styles/page.css" media="screen" />    
+        <link rel="Stylesheet" type="text/css" href="styles/minate-board.css" media="screen" />    
+        <link rel="Stylesheet" type="text/css" href="styles/jquery-ui-1.7.2.custom.css" media="screen" />
+
+        <script type="text/javascript" src="scripts/jquery-1.3.2.js"></script>
+        <script type="text/javascript" src="scripts/jquery-ui-1.7.2.custom.min.js"></script>
+        
+        <script type="text/javascript" src="scripts/Minate.Controller.js"></script>
+        <script type="text/javascript" src="scripts/Minate.Model.js"></script>
+        <script type="text/javascript" src="scripts/Minate.View.js"></script>
+        
+        <script type="text/javascript">
+            $(document).ready(function() {
+                MinateController.Init(14, 14, 51);
+            });
+        </script>
+    </head>
+    <body> 
+    <div id="header">
+            <h1>Minate webgame</h1>
+            <h2>Tenta encontrar as minas todas antes dos teus amigos, senão...PUMBA! Foste minateado!</h2>
+        </div>
+        
+        <div class="colmask leftmenu">
+            <div class="colleft">
+	            <div class="col1">                  
+                    <div class="playersPane">
+                        <div class="status active">
+                            <p class="name">Player 1</p>
+                            <p class="mines">0</p>
+                        </div>
+                        <div class="status">
+                            <p class="name">Player 2</p>
+                            <p class="mines">0</p>
+                        </div>
+                        <div class="status not-visible">
+                            <p class="name">Player 3</p>
+                            <p class="mines">0</p>
+                        </div>
+                        <div class="status not-visible">
+                            <p class="name">Player 4</p>
+                            <p class="mines">0</p>
+                        </div>
+                    </div>
+                    <div class="boardPane">
+                        <!-- The board goes here - dynamically-->
+                    </div>
+	            </div>
+	            
+	            <div class="col2">    
+                    <ul>
+                        <li>Option1</li>
+                        <li>Option2</li>
+                    </ul>
+	            </div>
+            </div>
+        </div>
+        
+        <div id="footer">
+            <p>This page uses the <a href="http://matthewjamestaylor.com/blog/perfect-2-column-left-menu.htm">Perfect 'Left Menu' 2 Column Liquid Layout</a> by <a href="http://matthewjamestaylor.com">Matthew James Taylor</a>. View more <a href="http://matthewjamestaylor.com/blog/-website-layouts">website layouts</a> and <a href="http://matthewjamestaylor.com/blog/-web-design">web design articles</a>.</p>
+        </div>
+    </body>
+</html>

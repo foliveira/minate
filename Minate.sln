@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Minate", "Minate\Minate.csproj", "{AF2971C9-5EB1-40BD-BC6E-DB5D2597D433}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Minate.DomainModel", "Minate.DomainModel\Minate.DomainModel.csproj", "{401D0174-04DE-4682-872F-238DEC8ECA84}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Minate.Basic", "Minate.Basic\Minate.Basic.csproj", "{73E376B0-194C-4C67-9173-61BC468B81AA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AF2971C9-5EB1-40BD-BC6E-DB5D2597D433}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{AF2971C9-5EB1-40BD-BC6E-DB5D2597D433}.Debug|Any CPU.Build.0 = Release|Any CPU
+		{AF2971C9-5EB1-40BD-BC6E-DB5D2597D433}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF2971C9-5EB1-40BD-BC6E-DB5D2597D433}.Release|Any CPU.Build.0 = Release|Any CPU
+		{401D0174-04DE-4682-872F-238DEC8ECA84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{401D0174-04DE-4682-872F-238DEC8ECA84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{401D0174-04DE-4682-872F-238DEC8ECA84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{401D0174-04DE-4682-872F-238DEC8ECA84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73E376B0-194C-4C67-9173-61BC468B81AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73E376B0-194C-4C67-9173-61BC468B81AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73E376B0-194C-4C67-9173-61BC468B81AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73E376B0-194C-4C67-9173-61BC468B81AA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,498 @@
+﻿/* General styles */
+body 
+{
+	margin: 0;
+	padding: 0;
+	border: 0;			    /* This removes the border around the viewport in old versions of IE */
+	width: 100%;
+	background: #f4f4f4;
+	min-width: 600px;		/* Minimum width of layout - remove line if not required -- The min-width property does not work in old versions of Internet Explorer */
+	font-size: 90%;
+    font-family: arial,helvetica,sans-serif;
+}
+
+a 
+{
+	color: #369;
+    
+    :hover 
+    {
+        color: #fff;
+    	background: #369;
+    	text-decoration: none;
+    }
+}
+
+h1, h2, h3 
+{
+	margin: .8em 0 .2em 0;
+	padding: 0;
+}
+
+p 
+{
+	margin: .4em 0 .8em 0;
+	padding: 0;
+}
+
+img 
+{
+	margin: 10px 0 5px;
+}
+
+/* Header styles */
+#header
+{
+	clear: both;
+	float: left;
+	width: 100%;
+	border-bottom: 1px solid #000;
+    
+    p, h1, h2
+    {
+    	padding: .4em 15px 0 15px;
+	    margin: 0;
+    }
+    
+    ul
+    {
+    	width: 100%;
+        position: relative;
+        background-color: white;
+        margin: 10px 0;
+        padding: 15px;
+        overflow: hidden;
+        border: 1px solid #000;
+        
+        .login
+        {
+            float: right;
+            overflow: hidden;
+            position: relative;
+            margin: auto 20px;
+            padding: 7px;
+        
+            a  { font-weight: bold;  }
+        }
+        
+        li
+        {
+            float: left;
+            list-style: none;
+            
+            .back
+            {
+                border: 1px solid #000;
+                background-color: #e6e8ea;
+                width: 9px;
+                height: 30px;
+                z-index: 8;
+                position: absolute;
+            }
+               
+            a
+            {
+                font: bold 14px arial;
+                text-decoration: none;
+                color: #000;
+                outline: none;
+                text-align: center;
+                top: 7px;
+                text-transform: uppercase;
+                letter-spacing: 0;
+                z-index: 10;
+                display: block;
+                float: left;
+                height: 30px;
+                position: relative;
+                overflow: hidden;
+                margin: auto 10px;                
+                
+                :hover, :active, :visited
+                {
+                	background: none;
+                    border: none;
+                }
+            }
+        }
+        
+        li.back
+        {
+            border: 1px solid #000;
+            background-color: #e6e8ea;
+            width: 9px;
+            height: 30px;
+            z-index: 8;
+            position: absolute;
+        }
+    }
+}
+
+/* column container */
+.colmask 
+{
+	position: relative;	/* This fixes the IE7 overflow hidden bug */
+	clear: both;
+	float: left;
+	width: 100%;			/* width of whole page */
+	overflow: hidden;		/* This chops off any overhanging divs */
+}
+
+/* common column settings */
+.colright,
+.colmid,
+.colleft 
+{
+	float: left;
+	width: 100%;
+	position: relative;
+}
+
+.col1,
+.col2,
+.col3 
+{
+	float: left;
+	position: relative;
+	padding: 0 0 1em 0;
+	overflow: hidden;
+}
+
+/* Full page settings */
+.fullpage 
+{
+	background: #fff;		/* page background colour */
+    
+    .col1
+    {
+    	width: 96%;			/* page width minus left and right padding */
+	    left: 2%;			/* page left padding */    
+    }
+}
+
+/* 2 Column (left menu) settings */
+.leftmenu {
+	background:#fff;		/* right column background colour */
+    
+    .colleft 
+    {
+        right:80%;			/* right column width */
+    	/*background:#f4f4f4;	/* left column background colour */
+	    border-right: 1px solid #000;
+    }
+    
+    .col1
+    {
+        width:71%;			/* right column content width */
+    	left:102%;			/* 100% plus left column left padding */
+        z-index: 10;
+    }
+    
+    .col2
+    {
+        width:26%;			/* left column content width (column width minus left and right padding) */
+	    left:12%;			/* (right column left and right padding) plus (left column left padding) */
+    }
+}
+
+/* Footer styles */
+#footer {
+	clear: both;
+	float: left;
+	width: 100%;
+	border-top: 1px solid #000;
+    font-size: 75%;
+    margin: 0 auto;
+    
+    p
+    {
+    	padding: 10px;
+	    margin: 0 auto;
+    }
+}
+
+
+/* Minate MVC layout definition */
+.input-validation-error
+{
+    border: 1px solid red;
+    background-color: #fee;
+    font-size:small;
+}
+
+.field-validation-error,
+.validation-summary-errors
+{
+    color: Red;
+    font-weight: bold;
+    font-size:small;
+}
+
+#success-form-post
+{
+    clear:both;
+	background:Green;
+	color:#fff;
+	border:solid 1px #666666;
+	font-size:medium;
+	font-weight:bold;
+	padding:4px 6px;
+}
+
+form
+{
+    p
+    {
+        font-weight: bold;
+    }
+}
+
+.login
+{
+    #menuLoginForm
+    {
+        display: none;
+    }
+}
+
+.alternate
+{
+    background-color: Silver;
+}
+
+blockquote
+{ 
+    border : solid #369 1px; 
+    padding : 10px;
+    background: #f4f4f4 none; 
+    color: #000;
+	float: left;
+ 
+    :before
+    {
+        font-size: 35pt;
+        content: open-quote;
+    }
+}
+
+#games 
+{
+    display: table;
+    width: 375px;
+    margin-top: 2em;
+    margin-right: auto;
+    margin-left: auto;
+    
+    .games-row
+    {
+    
+        display: table-row;
+        
+        #progress,
+        #pending,
+        #completed,
+        #random
+        {
+            font-weight: bold;
+            padding: 0px 150px 50px 150px;
+            display: table-cell;    
+        }
+    }
+}
+
+form, 
+button 
+{
+    border: 0; 
+    margin: 0; 
+    padding: 0;
+}
+
+.spacer
+{
+    clear:both; 
+    height:1px;
+}
+
+.minate-form
+{
+    margin:10px auto;
+    width: 450px;
+    padding:20px;
+}
+
+#basic
+{
+	border: solid 2px #f4f4f4;
+    
+    h1 
+    {
+    	font-size:large;
+	    font-weight:bold;
+	    margin-bottom:8px;
+    }
+    
+    p
+    {
+    	font-size: 11px;
+    	color: #666666;
+    	margin-bottom:20px;
+    	border-bottom:solid 1px #f4f4f4;
+    	padding-bottom:10px;
+    }
+    
+    label
+    {
+    	display:block;
+    	font-weight:bold;
+    	text-align:right;
+    	width:140px;
+    	float:left;
+    }
+    
+    .small
+    {
+    	color:#666666;
+        display:block;
+        font-size:x-small;
+        font-weight:normal;
+        text-align:right;
+        width:180px;
+    }
+    
+    input,
+    img,
+    textarea
+    {
+    	float:left;
+    	width:200px;
+    	margin:2px 0 30px 10px;
+    }
+    
+    button
+    {
+    	clear:both;
+    	margin-left:150px;
+    	background:#888888;
+    	color:#FFFFFF;
+    	border:solid 1px #666666;
+    	font-size:larger;
+    	font-weight:bold;
+    	padding:4px 6px;
+    }
+}
+
+#slim
+{ 
+	clear:both;
+	background:#888888;
+	color:#FFFFFF;
+	border:solid 1px #666666;
+	font-size:11px;
+	font-weight:bold;
+	padding:4px 6px;
+}
+
+#ui-datepicker-div
+{
+    z-index: 9999999;
+}
+
+#profile-menu 
+{
+    width: 200px;
+    margin-top: 25%;
+    
+    ul, 
+    ul li 
+    {
+        padding: 3px;
+        margin: 0px;
+        list-style: none;
+    }
+
+    ul li 
+    {
+        height: 30px;
+        vertical-align: middle;
+    }
+
+    ul li a 
+    {
+        display: block;
+        border-bottom: 1px dashed #0e0e0e;
+        text-decoration: none;
+        font-weight: bold;
+    }
+}
+
+#members,
+#friends,
+#friends-confirm,
+#games,
+#stats
+{
+	font-size: 12px;
+	margin: 45px;
+	width: 100%;
+	text-align: left;
+	border-collapse: collapse;
+    font-family: arial,helvetica,sans-serif;
+    
+    th
+    {
+    	font-size: medium;
+    	font-weight: bolder;
+    	padding: 8px;
+    	background: #f4f4f4;
+    	border-top: 4px solid #888;
+    	border-bottom: 1px solid #000;
+    	color: #00;
+    }
+    
+    td
+    {
+    	padding: 8px;
+    	background: #f8f8f8; 
+    	border-bottom: 1px solid #000;
+    	color: #222;
+    	border-top: 1px solid transparent;
+    }
+    
+    tr:hover td
+    {
+    	background: #d0dafd;
+    	color: #339;
+    }
+}
+
+#profile
+{
+    margin-top: -20%;
+    width: 75%;
+	clear: both;
+    float:right;
+    position: relative;
+    
+    ul, 
+    ul li 
+    {
+        padding: 3px;
+        margin: 0px;
+        list-style: none;
+    }
+
+    ul li 
+    {
+        height: 35px;
+        vertical-align: middle;
+    }
+
+    ul li div.desc
+    {
+        display: block;
+        border-bottom: 1px dashed #0e0e0e;
+        text-decoration: none;
+        font-weight: bold;
+    }
+}

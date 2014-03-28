@@ -1,0 +1,46 @@
+<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us">
+    <head runat="server">
+        <title><asp:ContentPlaceHolder ID="TitleContent" runat="server" /></title>
+    
+		<%= Html.Stylesheet("~/Content/page.less.css") %>
+		<%= Html.Stylesheet("~/Content/jquery-ui-1.8rc1.custom.less.css")%>
+        <asp:ContentPlaceHolder ID="Stylesheets" runat="server" />
+        
+        <%= Html.ScriptInclude("~/Scripts/jquery-1.4.1.min.js")%>
+        <%= Html.ScriptInclude("~/Scripts/jquery-ui-1.8rc1.custom.min.js")%>
+		<%= Html.ScriptInclude("~/Scripts/jquery.easing.min.js") %>
+		<%= Html.ScriptInclude("~/Scripts/jquery.lavalamp.js") %>
+        
+        <%= Html.ScriptInclude("~/Scripts/MinateMenu.js") %>
+        <asp:ContentPlaceHolder ID="Scripts" runat="server" />
+        
+        <asp:ContentPlaceHolder ID="jQuery" runat="server" />  
+    </head>
+
+    <body>
+        <div class="page">
+            <div id="header">
+                <h1>Minate WebGame</h1>
+                
+                <ul id="menu">	
+                    <% Html.RenderPartial("MenuLinks"); %>
+                    <% Html.RenderPartial("UserLogin"); %>
+                </ul>
+            </div>
+
+            <div id="main" class="colmask fullpage">
+            	<div class="col1">
+                    <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+                </div>
+            </div>
+                    
+            <div id="footer">
+                <p><i>Minate</i> <%: "©"  %> 2010. This page uses the <a href="http://matthewjamestaylor.com/blog/perfect-full-page.htm">Perfect 'Full Page' 1 column Liquid Layout</a>.</p>
+            </div>
+        </div>
+    </body>
+</html>

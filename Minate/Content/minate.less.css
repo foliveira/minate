@@ -1,0 +1,64 @@
+﻿body
+{
+    cursor: default;
+}
+
+div.mineboard
+{
+    width: 375px;
+    margin-top: 2em;
+    margin-right: auto;
+    margin-left: auto;
+    display: table;
+    border: solid 1px black;
+    
+    .mineboard-row 
+    {
+        display: table-row;
+        
+        .mineboard-cell
+        {
+            background-image: url("./images/mines_sprite.png");
+            background-position: 0px 0px;
+            display: table-cell;    
+            padding: 25px 12px 0px 12px;
+            z-index: 1;
+            border: solid 1px #000000;
+    
+            :hover 
+            { 
+                border: solid 1.5px #ff0000; 
+            }
+        }
+    }
+}
+
+div.players
+{
+    position: absolute;
+    padding: 5em 0em 0em 2em;
+    
+   div#active 
+    {
+        background-color: #C0C0F0; 
+    }
+    
+    .status
+    {
+        border: solid 2px #000;
+        display: list-item;
+        list-style-type: none;
+        padding: 15px;
+        
+        .name 
+        {
+            font-size: 120%;
+            font-weight: bolder;
+        }
+    }
+}
+
+#dialog 
+{
+    display: none;
+}
